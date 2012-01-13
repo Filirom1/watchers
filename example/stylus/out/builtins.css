@@ -1,0 +1,32 @@
+body {
+  color: #6e6e6e;
+  color: #777;
+  color: rgba(138,238,238,0.50);
+  color: rgba(238,238,238,0.50);
+}
+body {
+  foo: three 3;
+}
+body {
+  foo: 2;
+  foo: 1;
+  foo: true;
+  foo: 3;
+}
+body {
+  foo: 204;
+  foo: 40%;
+}
+body {
+  foo: '%';
+  foo: 15px;
+  foo: 15%;
+}
+body {
+  foo: 5;
+  foo: 10;
+  foo: 2.5;
+}
+body {
+  foo: X::MessedUp::IE.crap(here);
+}

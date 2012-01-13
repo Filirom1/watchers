@@ -1,0 +1,60 @@
+/*
+Syntax error: Invalid CSS after "": expected expression (e.g. 1px, bold), was "= !layout_grid_..."
+        on line 65 of /home/romain/htmlizr/example/sass/in/modules/grid.sass
+
+60: =prepend(!n)
+61:   :padding-left = (!layout_grid_outer_width) * !n
+62: 
+63: // mixin to a column to move it n columns to the left
+64: =pull(!n)
+65:   :float left
+66:   :position relative
+67:   :margin-left = -!layout_grid_outer_width * !n
+68: 
+69: // mixin to a column to push it n columns to the right
+70: =push(!n)
+
+Backtrace:
+/home/romain/htmlizr/example/sass/in/modules/grid.sass:65
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/scss/parser.rb:898:in `expected'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/lexer.rb:193:in `expected!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:443:in `assert_expr'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:49:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:140:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script.rb:32:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:808:in `parse_script'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:584:in `parse_property'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:535:in `parse_line'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:447:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:456:in `block in build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:449:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:449:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:322:in `_to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:238:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:214:in `watch'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin.rb:111:in `method_missing'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:408:in `watch_or_update'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:294:in `process_result'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:21:in `parse!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"= !layout_grid_...\"\A         on line 65 of /home/romain/htmlizr/example/sass/in/modules/grid.sass\A \A 60: =prepend(!n)\A 61:   :padding-left = (!layout_grid_outer_width) * !n\A 62: \A 63: // mixin to a column to move it n columns to the left\A 64: =pull(!n)\A 65:   :float left\A 66:   :position relative\A 67:   :margin-left = -!layout_grid_outer_width * !n\A 68: \A 69: // mixin to a column to push it n columns to the right\A 70: =push(!n)"; }

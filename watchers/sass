@@ -1,0 +1,6 @@
+#!/bin/bash
+
+inDir=$1
+outDir=$2
+
+sass --watch $1:$2

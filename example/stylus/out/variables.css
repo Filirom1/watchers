@@ -1,0 +1,10 @@
+body {
+  font: 12px "Lucida Grande", Arial, sans-serif;
+  color: #fff;
+}
+#wrapper {
+  width: 80%;
+}
+.sidebar {
+  width: 40%;
+}

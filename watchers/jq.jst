@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var tmpl   = require('jquery-tmpl-jst');
+var watch = require('watch');
+
+var inDir = process.argv[2];
+var outDir = process.argv[3];
+
+watch.watchTree(inDir, function (f, curr, prev) {
+  // Builds a template string
+  tmpl.build(inDir, function( output ){
+
+    // Creates a file called templates.js
+    tmpl.process( output, outDir );
+  });
+})

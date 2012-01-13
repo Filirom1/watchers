@@ -1,0 +1,51 @@
+/*
+Syntax error: Invalid property: ":color= !font_color".
+        on line 5 of /home/romain/htmlizr/example/sass/in/modules/typography.sass
+
+1: @import colors
+2: 
+3: =normal-text
+4:   :font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+5:   :color= !font_color
+6:   :background= !font_background
+7: 
+8: =fixed-width-text
+9:   :font 1em 'andale mono', 'lucida console', monospace
+10:   :line-height 1.5
+
+Backtrace:
+/home/romain/htmlizr/example/sass/in/modules/typography.sass:5
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:534:in `parse_line'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:447:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:456:in `block in build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:449:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:449:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:322:in `_to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:238:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:214:in `watch'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin.rb:111:in `method_missing'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:408:in `watch_or_update'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:294:in `process_result'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:21:in `parse!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \":color= !font_color\".\A         on line 5 of /home/romain/htmlizr/example/sass/in/modules/typography.sass\A \A 1: @import colors\A 2: \A 3: =normal-text\A 4:   :font-family \"Helvetica Neue\", Helvetica, Arial, sans-serif\A 5:   :color= !font_color\A 6:   :background= !font_background\A 7: \A 8: =fixed-width-text\A 9:   :font 1em 'andale mono', 'lucida console', monospace\A 10:   :line-height 1.5"; }

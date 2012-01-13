@@ -1,0 +1,49 @@
+/*
+Syntax error: Invalid CSS after "(": expected variable (e.g. $foo), was "!image = images..."
+        on line 1 of /home/romain/htmlizr/example/sass/in/modules/debug.sass
+
+1: =showgrid(!image = images/grid.png)
+2:   :background= url(!image)
+3: 
+4: =blueprint-debug(!grid_image = images/grid.png)
+5:   // Use this class on any div.span / container to see the grid.
+6:   // TODO: prefix this with the project path.
+
+Backtrace:
+/home/romain/htmlizr/example/sass/in/modules/debug.sass:1
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/scss/parser.rb:898:in `expected'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/lexer.rb:193:in `expected!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:448:in `assert_tok'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:317:in `block in defn_arglist!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:314:in `loop'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:314:in `defn_arglist!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:102:in `parse_mixin_definition_arglist'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:776:in `parse_mixin_definition'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:546:in `parse_line'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:447:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:322:in `_to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:238:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:214:in `watch'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin.rb:111:in `method_missing'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:408:in `watch_or_update'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:294:in `process_result'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:21:in `parse!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"(\": expected variable (e.g. $foo), was \"!image = images...\"\A         on line 1 of /home/romain/htmlizr/example/sass/in/modules/debug.sass\A \A 1: =showgrid(!image = images/grid.png)\A 2:   :background= url(!image)\A 3: \A 4: =blueprint-debug(!grid_image = images/grid.png)\A 5:   // Use this class on any div.span / container to see the grid.\A 6:   // TODO: prefix this with the project path."; }

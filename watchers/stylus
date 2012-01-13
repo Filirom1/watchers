@@ -1,0 +1,6 @@
+#!/bin/bash
+
+inDir=$1
+outDir=$2
+
+stylus --out $outDir --watch $inDir

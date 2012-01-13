@@ -1,0 +1,72 @@
+/*
+Syntax error: Invalid CSS after "(": expected variable (e.g. $foo), was "!normal = !link..."
+        on line 28 of /home/romain/htmlizr/example/sass/in/modules/colors.sass
+        from line 1 of /home/romain/htmlizr/example/sass/in/modules/form.sass
+
+23: 
+24: !error_color        = #8a1f11
+25: !error_bg_color     = #FBE3E4
+26: !error_border_color = #FBC2C4
+27: 
+28: =link-colors(!normal = !link_color, !hover = !link_hover_color, !active = !link_active_color, !visited = !link_visited_color, !focus = !link_focus_color)
+29:   :color= !normal
+30:   &:hover
+31:     :color= !hover
+32:   &:active
+33:     :color= !active
+
+Backtrace:
+/home/romain/htmlizr/example/sass/in/modules/colors.sass:28
+/home/romain/htmlizr/example/sass/in/modules/form.sass:1
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/scss/parser.rb:898:in `expected'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/lexer.rb:193:in `expected!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:448:in `assert_tok'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:317:in `block in defn_arglist!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:314:in `loop'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:314:in `defn_arglist!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/parser.rb:102:in `parse_mixin_definition_arglist'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:776:in `parse_mixin_definition'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:546:in `parse_line'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:447:in `build_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:466:in `block in append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:465:in `append_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:322:in `_to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:250:in `to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:238:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:214:in `watch'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/plugin.rb:111:in `method_missing'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:408:in `watch_or_update'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:294:in `process_result'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/exec.rb:21:in `parse!'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.1.1/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"(\": expected variable (e.g. $foo), was \"!normal = !link...\"\A         on line 28 of /home/romain/htmlizr/example/sass/in/modules/colors.sass\A         from line 1 of /home/romain/htmlizr/example/sass/in/modules/form.sass\A \A 23: \A 24: !error_color        = #8a1f11\A 25: !error_bg_color     = #FBE3E4\A 26: !error_border_color = #FBC2C4\A 27: \A 28: =link-colors(!normal = !link_color, !hover = !link_hover_color, !active = !link_active_color, !visited = !link_visited_color, !focus = !link_focus_color)\A 29:   :color= !normal\A 30:   &:hover\A 31:     :color= !hover\A 32:   &:active\A 33:     :color= !active"; }

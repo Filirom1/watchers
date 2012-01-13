@@ -1,0 +1,7 @@
+#!/bin/bash
+
+inDir=$1
+outDir=$2
+
+# edit your compass config.rb for destination
+compass watch $1

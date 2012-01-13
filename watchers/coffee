@@ -1,0 +1,6 @@
+#!/bin/bash
+
+inDir=$1
+outDir=$2
+
+coffee --output $outDir --compile --watch $inDir

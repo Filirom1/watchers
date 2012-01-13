@@ -1,0 +1,7 @@
+#!/bin/bash
+# Watch is only implemented in the ruby version.
+
+inDir=$1
+outDir=$2
+
+coffee ../../support/lessc-watch.coffee $inDir $outDir
